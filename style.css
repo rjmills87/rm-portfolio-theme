@@ -102,11 +102,13 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Global styles */
 body {
   font-family: "Space Grotesk", sans-serif;
-  scroll-behavior: smooth;
 }
 
 a {
