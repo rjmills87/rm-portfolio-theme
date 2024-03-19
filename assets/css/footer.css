@@ -1,0 +1,13 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.github-icon,
+.linkedin-icon {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}

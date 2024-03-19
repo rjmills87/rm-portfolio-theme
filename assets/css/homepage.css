@@ -1,0 +1,234 @@
+/* Hero Styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100%;
+  text-align: center;
+  /* background-color: #f4f4f4; */
+}
+
+.hero-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.hero-button {
+  font-family: "Space Grotesk", sans-serif;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #333;
+}
+
+.red-text {
+  color: red;
+}
+
+/* About Styles */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 2rem;
+}
+
+.about-para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 75%;
+}
+
+/* Skills Styles */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 3rem;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 200px;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(244, 7, 7);
+  transition: transform 0.3s ease;
+}
+
+.skill-icon {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Projects Styles */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-thumbnail {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Hero Styles */
+  .hero {
+    height: 50vh;
+  }
+  .hero-heading {
+    font-size: 3.5rem;
+    border-bottom: none;
+  }
+
+  /* About Styles */
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    margin-top: 3rem;
+  }
+
+  .about-para {
+    font-size: 1rem;
+  }
+
+  /* Skills Styles */
+
+  .skills {
+    margin-top: 3rem;
+  }
+
+  .skills-heading {
+    font-size: 2rem;
+  }
+
+  .skill {
+    margin-bottom: 2rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 767px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-para {
+    font-size: 1rem;
+  }
+
+  .skills-heading {
+    font-size: 1.5rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+}

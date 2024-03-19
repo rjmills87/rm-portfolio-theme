@@ -1,0 +1,30 @@
+.project {
+  margin-top: 3rem;
+}
+
+.project-card {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-image {
+  height: 200px;
+  width: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
