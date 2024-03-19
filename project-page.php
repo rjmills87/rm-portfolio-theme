@@ -10,11 +10,10 @@ get_header(); ?>
         <section class="project">
             <h2 class="project-heading"><?php the_title(); ?></h2>
             <div class="project-container">
-                <div class="project-card">
-                    <img class="project-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
-                        alt="<?php the_title(); ?>">
+                <img class="project-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
+                    alt="<?php the_title(); ?>">
 
-                    <?php
+                <?php
                     // Retrieve and display each paragraph of the post content individually
                     $post_content = get_the_content();
                     $paragraphs = explode("</p>", $post_content);
@@ -27,13 +26,39 @@ get_header(); ?>
                         }
                     }
                     ?>
-                    <a class="project-link" href="<?php the_permalink(); ?>">View Project</a>
-                </div>
                 <?php
-                
-                ?>
+
+$icons = get_the_terms(get_the_ID(), 'project_icon');
+
+if ($icons && !is_wp_error($icons)) :
+    ?>
+                <h3 class="tech-heading">Technology Used</h3>
+                <div class="icons">
+                    <?php
+     
+        foreach ($icons as $icon) :
+            $icon_id = $icon->term_id;
+
+            $icon_svg = get_template_directory_uri() . "/assets/images/" . $icon->name . '.svg';
+            ?>
+
+                    <div class="icon-container">
+                        <img class="project-icon" src="<?php echo $icon_svg; ?>" alt="<?php echo $icon->name; ?>" />
+                        <p class="icon-name"><?php echo $icon->name; ?></p>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+                <div class="btn-container">
+                    <button class="link-btn">GitHub Link</button>
+                    <button class="link-btn">Live Link</button>
+                </div>
+
+
             </div>
-            <a href="/"><span class="return-home">Back </span></a>
+            <div class="return-home">
+                <a href="/#projects"><span class="back">Back</span></a>
+            </div>
         </section>
     </main>
 

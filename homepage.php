@@ -9,16 +9,16 @@ get_header(); ?>
         <section class="hero">
             <h1 class="hero-heading">Hi, I'm <span class="red-text">Rhys</span>. <br>Web<span class="red-text">
                     Developer</span>.</h1>
-            <button class="hero-button">Contact</button>
+            <a href="#contact"><button class="hero-button">Contact</button></a>
         </section>
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <h2 class="about-heading">About Me</h2>
             <p class="about-para">I am a web developer with a passion for creating beautiful and functional websites. I
                 have experience
                 with HTML, CSS, JavaScript, and WordPress. I am always looking to learn new things and improve my
                 skills.</p>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2 class="skills-heading">Skills</h2>
             <div class="skills-container">
                 <div class="skill">
@@ -68,9 +68,9 @@ get_header(); ?>
                 </div>
             </div>
 </div>
-<section class="projects">
-    <h2 class="projects-heading">Projects</h2>
-    <div class="project-container">
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-heading">Projects</h2>
+    <div class="projects-section-container">
         <?php
                 $args = array(
                     'post_type' => 'project',
@@ -81,12 +81,12 @@ get_header(); ?>
                     while ($projects->have_posts()) {
                         $projects->the_post();
                         ?>
-        <div class="project">
+        <div class="projects-section-project">
             <a href="<?php the_permalink(); ?>">
-                <h3 class="project-title"><?php the_title(); ?></h3>
-                <div class="project-thumbnail">
-                    <img class="project-thumbnail" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
-                        alt="<?php the_title(); ?>">
+                <h3 class="projects-section-project-title"><?php the_title(); ?></h3>
+                <div class="projects-section-project-thumbnail">
+                    <img class="projects-section-project-thumbnail"
+                        src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">
                 </div>
             </a>
         </div>
@@ -97,7 +97,7 @@ get_header(); ?>
                 ?>
     </div>
 </section>
-<section class="contact">
+<section id="contact" class="contact">
     <h2 class="contact-heading">Contact</h2>
     <p class="contact-para">I am available for freelance work. If you are interested in hiring me for your project,
         please contact me.</p>

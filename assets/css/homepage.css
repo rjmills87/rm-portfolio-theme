@@ -15,7 +15,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--gray);
 }
 
 .hero-button {
@@ -24,8 +24,8 @@
   padding: 1rem 2.5rem;
   margin-top: 1rem;
   border-radius: 15px;
-  background-color: red;
-  color: #fff;
+  background-color: var(--red);
+  color: var(--white);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
@@ -35,11 +35,11 @@
 }
 
 .hero-button:hover {
-  background-color: #333;
+  background-color: var(--gray);
 }
 
 .red-text {
-  color: red;
+  color: var(--red);
 }
 
 /* About Styles */
@@ -54,14 +54,14 @@
 .about-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--red);
   margin-bottom: 2rem;
 }
 
 .about-para {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #333;
+  color: var(--gray);
   margin-bottom: 2rem;
   text-align: center;
   width: 75%;
@@ -80,7 +80,7 @@
 .skills-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--red);
   margin-bottom: 3rem;
 }
 
@@ -100,10 +100,10 @@
   margin-bottom: 1rem;
   width: 200px;
   text-align: center;
-  background: #fff;
+  background: var(--white);
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(244, 7, 7);
+  box-shadow: 0 0 10px var(--red);
   transition: transform 0.3s ease;
 }
 
@@ -120,11 +120,11 @@
 .skill-name {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #333;
+  color: var(--gray);
 }
 
 /* Projects Styles */
-.projects {
+.projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,14 +132,14 @@
   width: 100%;
 }
 
-.projects-heading {
+.projects-section-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--red);
   margin-bottom: 2rem;
 }
 
-.project-container {
+.projects-section-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -148,14 +148,14 @@
   margin-bottom: 2rem;
 }
 
-.project-title {
+.projects-section-project-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--gray);
   margin-bottom: 1rem;
 }
 
-.project-thumbnail {
+.projects-section-project-thumbnail {
   height: 200px;
   width: auto;
   border-radius: 10px;

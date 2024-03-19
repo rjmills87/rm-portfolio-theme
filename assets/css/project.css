@@ -2,29 +2,101 @@
   margin-top: 3rem;
 }
 
-.project-card {
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--red);
+  text-align: center;
 }
 
 .project-image {
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 1000px;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.project-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: red;
-  margin-bottom: 2rem;
-  text-align: center;
+  padding: 2rem;
 }
 
 .project-description {
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
-  margin-bottom: 1rem;
+  margin: 1rem 3rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 2rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-icon {
+  height: 75px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.1);
+}
+
+.tech-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 2rem;
+}
+
+.link-btn {
+  font-family: "Space Grotesk", sans-serif;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: var(--red);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 200px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  background-color: #333;
+}
+
+.return-home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.back {
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  font-size: 1.25rem;
 }
