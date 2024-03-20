@@ -20,11 +20,11 @@
   padding: 1rem 2.5rem;
   margin-top: 1rem;
   border-radius: 15px;
-  background-color: red;
-  color: #fff;
+  background-color: var(--red);
+  color: var(--white);
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
@@ -32,5 +32,5 @@
 }
 
 .wpcf7-submit:hover {
-  background-color: #cc0000;
+  background-color: var(--gray);
 }

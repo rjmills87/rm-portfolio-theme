@@ -7,8 +7,11 @@ get_header(); ?>
 <div class="container">
     <main id="main" class="site-main" role="main">
         <section class="hero">
-            <h1 class="hero-heading">Hi, I'm <span class="red-text">Rhys</span>. <br>Web<span class="red-text">
-                    Developer</span>.</h1>
+            <h1 class="hero-heading">Hi<span class="red">,</span> I<span class="red">'</span>m <span
+                    class="red-text">Rhys</span>.
+                <br>Web<span class="red-text">
+                    Developer</span>.
+            </h1>
             <a href="#contact"><button class="hero-button">Contact</button></a>
         </section>
         <section id="about-me" class="about-me">
@@ -48,13 +51,12 @@ get_header(); ?>
                 <div class="skill">
                     <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/react.svg"
                         alt="React JS Logo">
-                    <p class="skill-name">React JS</p>
+                    <p class="skill-name">React</p>
                 </div>
                 <div class="skill">
-                    <img class="skill-icon"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/tailwindcss.svg"
+                    <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/tailwind.svg"
                         alt="Tailwind CSS Logo">
-                    <p class="skill-name">Tailwind CSS</p>
+                    <p class="skill-name">Tailwind</p>
                 </div>
                 <div class="skill">
                     <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/git.svg"
@@ -97,7 +99,7 @@ get_header(); ?>
                 ?>
     </div>
 </section>
-<section id="contact" class="contact">
+<section id="contact" class="contact-section">
     <h2 class="contact-heading">Contact</h2>
     <p class="contact-para">I am available for freelance work. If you are interested in hiring me for your project,
         please contact me.</p>
@@ -106,4 +108,10 @@ get_header(); ?>
     </div>
     </main>
     </div>
-    <?php get_footer(); ?>
+    <div class="back-to-top">
+        <a href=" #header">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fast-arrow-up.svg" alt="Return to top">
+        </a>
+    </div>
+</section>
+<?php get_footer(); ?>

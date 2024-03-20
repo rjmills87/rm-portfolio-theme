@@ -10,4 +10,10 @@ footer {
   height: 50px;
   width: 50px;
   padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.github-icon:hover,
+.linkedin-icon:hover {
+  transform: scale(1.1);
 }
