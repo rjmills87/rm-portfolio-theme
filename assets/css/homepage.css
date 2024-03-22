@@ -7,7 +7,6 @@
   height: 85vh;
   width: 100%;
   text-align: center;
-  /* background-color: #f4f4f4; */
 }
 
 .hero-heading {
@@ -15,7 +14,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: var(--gray);
+  color: var(--white);
 }
 
 .hero-button {
@@ -35,7 +34,7 @@
 }
 
 .hero-button:hover {
-  background-color: var(--gray);
+  background-color: var(--red-dark);
 }
 
 .red-text {
@@ -69,7 +68,7 @@
 .about-para {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--gray);
+  color: var(--white);
   margin-bottom: 2rem;
   text-align: center;
   width: 75%;
@@ -110,10 +109,10 @@
   margin-bottom: 1rem;
   width: 200px;
   text-align: center;
-  background: var(--white);
+  background: var(--black);
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: 0 0 10px var(--gray);
+  box-shadow: 0 0 10px var(--red);
 }
 
 .skill-icon {
@@ -125,7 +124,7 @@
 .skill-name {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--gray);
+  color: var(--white);
 }
 
 /* Projects Styles */
@@ -158,7 +157,7 @@
 .projects-section-project-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--gray);
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
@@ -189,7 +188,7 @@
 .contact-para {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--gray);
+  color: var(--white);
   margin-bottom: 2rem;
   text-align: center;
   width: 75%;

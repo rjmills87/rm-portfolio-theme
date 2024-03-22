@@ -13,7 +13,8 @@
         <div class="site-header">
             <div id='site-logo'>
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/site-logo.png"
+                    <img class="logo"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/site-logo-invert.png"
                         alt="<?php bloginfo('name'); ?>">
                 </a>
             </div>

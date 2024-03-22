@@ -10,8 +10,12 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--red);
   border-radius: 4px;
+}
+
+label {
+  color: var(--white);
 }
 
 .wpcf7-submit {
@@ -32,5 +36,5 @@
 }
 
 .wpcf7-submit:hover {
-  background-color: var(--gray);
+  background-color: var(--red-dark);
 }

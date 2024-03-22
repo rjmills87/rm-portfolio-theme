@@ -9,8 +9,10 @@ Version: 1.0
 /* CSS Color Variables */
 :root {
   --red: #ff002b;
+  --red-dark: #d00000;
   --white: #ffffff;
   --gray: #333333;
+  --black: #000814;
 }
 
 /* Reset default browser styles */
@@ -109,23 +111,9 @@ html {
 /* Global styles */
 body {
   font-family: "Space Grotesk", sans-serif;
+  background-color: var(--black);
 }
 
 a {
   text-decoration: none;
-}
-
-/* Posts */
-.post {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.post h2 {
-  margin-bottom: 10px;
-}
-
-.post p {
-  margin-bottom: 10px;
 }
