@@ -50,11 +50,22 @@ if ($icons && !is_wp_error($icons)) :
                 </div>
                 <?php endif; ?>
                 <div class="btn-container">
-                    <button class="link-btn">GitHub Link</button>
-                    <button class="link-btn">Live Link</button>
+                    <?php
+    // Get GitHub Repo Custom Field Value
+    $github_repo = get_post_meta(get_the_ID(), 'github_repo', true);
+   
+    // Get Live Project Custom Field Value
+    $live_project = get_post_meta(get_the_ID(), 'live_project', true);
+    ?>
+                    <?php if (!empty($github_repo)) : ?>
+                    <a href="<?php echo esc_url($github_repo); ?>" target="_blank"><button class="link-btn">GitHub
+                            Link</button></a>
+                    <?php endif; ?>
+                    <?php if (!empty($live_project)) : ?>
+                    <a href="<?php echo esc_url($live_project); ?>" target="_blank"><button class="link-btn">Live
+                            Link</button></a>
+                    <?php endif; ?>
                 </div>
-
-
             </div>
             <div class="return-home">
                 <a href="/#projects"><span class="back">Back</span></a>
