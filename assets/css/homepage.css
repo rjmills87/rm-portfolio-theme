@@ -7,10 +7,13 @@
   height: 85vh;
   width: 100%;
   text-align: center;
+  background-image: url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-heading {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -35,16 +38,6 @@
 
 .hero-button:hover {
   background-color: var(--red-dark);
-}
-
-.red-text {
-  color: var(--red);
-  text-decoration: underline;
-  text-decoration-thickness: 8px;
-}
-
-.red {
-  color: var(--red);
 }
 
 /* About Styles */
@@ -111,7 +104,6 @@
   text-align: center;
   background: var(--black);
   padding: 1rem;
-  border-radius: 15px;
   box-shadow: 0 0 10px var(--red);
 }
 
@@ -164,8 +156,9 @@
 .projects-section-project-thumbnail {
   height: 200px;
   width: auto;
-  border-radius: 10px;
   margin-bottom: 1rem;
+
+  box-shadow: 0 0 10px var(--red);
 }
 
 /* Contact Styles */

@@ -7,10 +7,9 @@ get_header(); ?>
 <div class="container">
     <main id="main" class="site-main" role="main">
         <section class="hero">
-            <h1 class="hero-heading">Hi<span class="red">,</span> I<span class="red">'</span>m <span
-                    class="red-text">Rhys</span>.
-                <br>Web<span class="red-text">
-                    Developer</span>.
+            <h1 class="hero-heading">Hi, I'm Rhys.
+                <br>Web
+                Developer.
             </h1>
             <a href="#contact"><button class="hero-button">Contact</button></a>
         </section>
