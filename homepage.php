@@ -15,10 +15,13 @@ get_header(); ?>
         </section>
         <section id="about-me" class="about-me">
             <h2 class="about-heading">About Me</h2>
-            <p class="about-para">I am a web developer with a passion for creating beautiful and functional websites. I
-                have experience
-                with HTML, CSS, JavaScript, and WordPress. I am always looking to learn new things and improve my
-                skills.</p>
+            <p class="about-para">Hi! I'm Rhys, a passionate Web Developer based in Ipswich, UK. I have a passion for
+                creating engaging and functional digital experiences. With an eye for detail and an ongoing commitment
+                to
+                learning and personal development and an in an interest in staying at the forefront of web
+                technologies, I love to bring
+                designs to life by
+                creating sleek, responsive websites that captivate users with a seamless experience.</p>
         </section>
         <section id="skills" class="skills">
             <h2 class="skills-heading">Skills</h2>

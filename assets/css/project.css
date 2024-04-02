@@ -43,6 +43,12 @@
   gap: 15px;
 }
 
+.icon-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
 .project-icon {
   height: 75px;
   width: auto;

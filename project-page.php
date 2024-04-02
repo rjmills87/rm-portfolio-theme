@@ -10,9 +10,6 @@ get_header(); ?>
         <section class="project">
             <h2 class="project-heading"><?php the_title(); ?></h2>
             <div class="project-container">
-                <img class="project-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
-                    alt="<?php the_title(); ?>">
-
                 <?php
                     // Retrieve and display each paragraph of the post content individually
                     $post_content = get_the_content();
@@ -49,6 +46,10 @@ if ($icons && !is_wp_error($icons)) :
                     <?php endforeach; ?>
                 </div>
                 <?php endif; ?>
+                <img class="project-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
+                    alt="<?php the_title(); ?>">
+
+
                 <div class="btn-container">
                     <?php
     // Get GitHub Repo Custom Field Value
