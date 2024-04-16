@@ -20,13 +20,14 @@
   width: 1000px;
   margin-bottom: 1rem;
   padding: 2rem;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 .project-description {
-  font-size: 1.2rem;
-  font-weight: 500;
   color: var(--white);
-  margin: 1rem 3rem;
+  margin: 1rem 10rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .icons {
