@@ -8,8 +8,6 @@ Version: 1.0
 
 /* CSS Color Variables */
 :root {
-  --red: #ff002b;
-  --red-dark: #d00000;
   --white: #ffffff;
   --gray: #333333;
   --black: #000000;
@@ -110,7 +108,7 @@ html {
 
 /* Global styles */
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
   background-color: var(--black);
 }
 

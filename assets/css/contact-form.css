@@ -10,7 +10,7 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid var(--red);
+  border: 1px solid var(--gray);
   border-radius: 4px;
 }
 
@@ -19,13 +19,13 @@ label {
 }
 
 .wpcf7-submit {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
   display: inline-block;
   padding: 1rem 2.5rem;
   margin-top: 1rem;
   border-radius: 15px;
-  background-color: var(--red);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
@@ -36,5 +36,6 @@ label {
 }
 
 .wpcf7-submit:hover {
-  background-color: var(--red-dark);
+  background-color: var(--gray);
+  color: var(--white);
 }

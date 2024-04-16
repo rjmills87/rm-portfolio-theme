@@ -22,7 +22,7 @@ function theme_scripts() {
     wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/scripts/main.js', array(), '1.0.0', true);
 
     // Enqueue Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
 

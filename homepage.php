@@ -78,7 +78,7 @@ get_header(); ?>
         <?php
                 $args = array(
                     'post_type' => 'project',
-                    'posts_per_page' => 3
+                    'posts_per_page' => 4
                 );
                 $projects = new WP_Query($args);
                 if ($projects->have_posts()) {

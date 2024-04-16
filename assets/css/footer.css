@@ -7,8 +7,8 @@ footer {
 
 .github-icon,
 .linkedin-icon {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   padding: 20px;
   transition: transform 0.3s ease;
 }
