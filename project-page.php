@@ -11,6 +11,10 @@ get_header(); ?>
             <h2 class="project-heading"><?php the_title(); ?></h2>
 
             <div class="project-container">
+                <?php if (has_post_thumbnail()) : ?>
+                <img class="project-image" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                    alt="<?php the_title(); ?>">
+                <?php endif; ?>
                 <div class="project-description">
                     <?php the_content(); ?>
                 </div>
@@ -28,11 +32,6 @@ get_header(); ?>
                     </div>
                     <?php endforeach; ?>
                 </div>
-                <?php endif; ?>
-
-                <?php if (has_post_thumbnail()) : ?>
-                <img class="project-image" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                    alt="<?php the_title(); ?>">
                 <?php endif; ?>
 
                 <div class="btn-container">
