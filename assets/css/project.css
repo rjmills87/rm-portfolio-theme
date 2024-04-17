@@ -13,6 +13,9 @@
   color: var(--white);
   text-align: center;
   padding-bottom: 2rem;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .project-image {
@@ -104,8 +107,8 @@
 }
 
 .back {
-  color: var(--white);
+  color: var(--gray);
   text-decoration: underline;
-  text-decoration-color: var(--white);
+  text-decoration-color: var(--gray);
   font-size: 1.25rem;
 }

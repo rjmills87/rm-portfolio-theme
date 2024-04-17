@@ -1,8 +1,10 @@
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: transparent;
+  color: var(--gray);
   padding: 20px;
   text-align: center;
+  border-top: solid var(--gray) 0.5px;
+  margin: 0rem 5rem;
 }
 
 .github-icon,

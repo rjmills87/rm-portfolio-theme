@@ -51,7 +51,7 @@ get_header(); ?>
             </div>
 
             <div class="return-home">
-                <a href="/#projects"><span class="back">Back</span></a>
+                <a href="/"><span class="back">Back</span></a>
             </div>
         </section>
     </main>
