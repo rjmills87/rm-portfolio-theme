@@ -15,13 +15,13 @@ get_header(); ?>
                 <img class="project-image" src="<?php echo get_the_post_thumbnail_url(); ?>"
                     alt="<?php the_title(); ?>">
                 <?php endif; ?>
-                <div class="project-description">
+                <div class="project-description appear">
                     <?php the_content(); ?>
                 </div>
                 <?php $icons = get_the_terms(get_the_ID(), 'project_icon'); ?>
                 <?php if ($icons && !is_wp_error($icons)) : ?>
-                <h3 class="tech-heading">Technology Used</h3>
-                <div class="icons">
+                <h3 class="tech-heading appear">Technology Used</h3>
+                <div class="icons appear">
                     <?php foreach ($icons as $icon) : ?>
                     <?php
                             $icon_svg = get_template_directory_uri() . "/assets/images/" . $icon->name . '.svg';
@@ -34,7 +34,7 @@ get_header(); ?>
                 </div>
                 <?php endif; ?>
 
-                <div class="btn-container">
+                <div class="btn-container appear">
                     <?php
                     $github_repo = get_post_meta(get_the_ID(), 'github_repo', true);
                     $live_project = get_post_meta(get_the_ID(), 'live_project', true);

@@ -13,7 +13,7 @@ get_header(); ?>
             </h1>
             <a href="#contact"><button class="hero-button">Contact</button></a>
         </section>
-        <section id="about-me" class="about-me">
+        <section id="about-me" class="about-me appear">
             <h2 class="about-heading">About Me</h2>
             <p class="about-para">Hi! I'm Rhys, a passionate Web Developer based in Ipswich, UK. I have a passion for
                 creating engaging and functional digital experiences. With an eye for detail and an ongoing commitment
@@ -23,7 +23,7 @@ get_header(); ?>
                 designs to life by
                 creating sleek, responsive websites that captivate users with a seamless experience.</p>
         </section>
-        <section id="skills" class="skills">
+        <section id="skills" class="skills appear">
             <h2 class="skills-heading">Skills</h2>
             <div class="skills-container">
                 <div class="skill">
@@ -72,7 +72,7 @@ get_header(); ?>
                 </div>
             </div>
 </div>
-<section id="projects" class="projects-section">
+<section id="projects" class="projects-section appear">
     <h2 class="projects-section-heading">Projects</h2>
     <div class="projects-section-container">
         <?php
@@ -101,7 +101,7 @@ get_header(); ?>
                 ?>
     </div>
 </section>
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section appear">
     <h2 class="contact-heading">Contact</h2>
     <p class="contact-para">I am available for freelance work. If you are interested in hiring me for your project,
         please contact me.</p>
