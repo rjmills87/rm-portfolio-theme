@@ -54,7 +54,7 @@ p {
 .appear {
   transition: all 0.8s;
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(50px);
 }
 
 .appear.inview {
