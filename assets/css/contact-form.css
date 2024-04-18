@@ -1,10 +1,23 @@
 .contact-form-container {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   padding: 2rem;
+  max-width: 600px;
 }
 
-/* Contact Form 7 Styles */
+/* For tablets */
+@media only screen and (min-width: 768px) {
+  .contact-form-container {
+    width: 70%;
+  }
+}
+
+/* For desktops */
+@media only screen and (min-width: 1024px) {
+  .contact-form-container {
+    width: 50%;
+  }
+}
 
 .wpcf7-form-control {
   width: 100%;
@@ -12,6 +25,7 @@
   margin: 10px 0;
   border: 1px solid var(--gray);
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 label {
