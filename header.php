@@ -4,9 +4,12 @@
 <head>
     <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Rhys Miller's Web Development Portfolio. A website to showcase my work and web development skills.">
+
     <?php wp_head();?>
     <!-- This is a hook that allows WordPress to add things like stylesheets, scripts, and meta tags to the head of the document. -->
-    <title></title>
+    <title>Rhys Miller Portfolio</title>
 </head>
 
 <body <?php body_class();?>>
