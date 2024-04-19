@@ -152,7 +152,7 @@
 
 .projects-section-project-thumbnail {
   height: auto;
-  width: 375px;
+  width: 500px;
   margin-bottom: 1rem;
   transition: 0.5s;
 }
@@ -256,6 +256,10 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 767px) {
   /* Hero Styles */
+  .hero {
+    height: 50vh;
+  }
+
   .hero-heading {
     font-size: 2.5rem;
   }
@@ -296,5 +300,9 @@
 
   .projects-section-heading {
     font-size: 2.25rem;
+  }
+
+  .projects-section-project-thumbnail {
+    width: 275px;
   }
 }

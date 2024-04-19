@@ -115,3 +115,36 @@
   text-decoration-color: var(--gray);
   font-size: 1.25rem;
 }
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-image {
+    height: auto;
+    width: 650px;
+  }
+
+  .project-description {
+    margin: 1rem 3rem;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 767px) {
+  .project-heading {
+    font-size: 2.5rem;
+  }
+
+  .project-image {
+    height: auto;
+    width: 350px;
+  }
+
+  .project-description {
+    margin: 1rem 1.5rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

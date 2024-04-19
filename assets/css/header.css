@@ -109,7 +109,7 @@ li > a:hover {
     height: fit-content;
     z-index: 9;
     top: -100vh;
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in;
   }
 
   .mobile-nav ul li {
