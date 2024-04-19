@@ -7,6 +7,11 @@ menuToggle.addEventListener("click", () => {
   console.log("clicked");
 });
 
+// Mobile Navigation Close on Scroll
+window.addEventListener("scroll", () => {
+  mobileNav.classList.remove("active");
+});
+
 // Monitor sections for fade in animations
 const itemsToAppear = document.querySelectorAll(".appear");
 const makeActive = function (entries) {

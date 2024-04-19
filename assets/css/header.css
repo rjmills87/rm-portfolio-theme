@@ -102,8 +102,8 @@ li > a:hover {
   .mobile-nav {
     display: block;
     position: absolute;
-    background-color: var(--black);
-    border-top: var(--white) solid 1px;
+    background-color: var(--white);
+    border-top: var(--black) solid 1px;
     padding: 20px 0px;
     width: 100%;
     height: fit-content;
@@ -120,7 +120,7 @@ li > a:hover {
   }
 
   .mobile-nav ul li a {
-    color: #ffffff;
+    color: var(--black);
   }
 
   .active {

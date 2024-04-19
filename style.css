@@ -15,20 +15,23 @@ Version: 1.0
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Global styles */
 body {
   font-family: "Playfair Display", serif;
-  /* background-color: var(--black); */
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 60%,
     rgba(255, 255, 255, 1) 100%
   );
-  margin: 0;
-  box-sizing: border-box;
 }
 
 a {
