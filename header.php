@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>
     <!-- This is a hook that allows WordPress to add things like stylesheets, scripts, and meta tags to the head of the document. -->
+    <title></title>
 </head>
 
 <body <?php body_class();?>>
