@@ -106,7 +106,7 @@ li > a:hover {
     border-top: var(--black) solid 1px;
     padding: 20px 0px;
     width: 100%;
-    height: fit-content;
+    height: 50vh;
     z-index: 9;
     top: -100vh;
     transition: all 1s ease-in;
