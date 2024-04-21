@@ -40,8 +40,8 @@ get_header(); ?>
                     $live_project = get_post_meta(get_the_ID(), 'live_project', true);
                     ?>
                     <?php if (!empty($github_repo)) : ?>
-                    <a href="<?php echo esc_url($github_repo); ?>" target="_blank"><button class="link-btn">GitHub
-                            Link</button></a>
+                    <a href="<?php echo esc_url($github_repo); ?>" target="_blank"><button class="link-btn">Source
+                            Code</button></a>
                     <?php endif; ?>
                     <?php if (!empty($live_project)) : ?>
                     <a href="<?php echo esc_url($live_project); ?>" target="_blank"><button class="link-btn">Live

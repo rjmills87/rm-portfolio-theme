@@ -23,6 +23,13 @@
   animation-fill-mode: forwards;
 }
 
+.hero-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .hero-button {
   font-family: "Playfair Display", serif;
   display: inline-block;
@@ -34,7 +41,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   border: none;
   cursor: pointer;
 }

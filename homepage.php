@@ -11,7 +11,11 @@ get_header(); ?>
                 <br>Web
                 Developer.
             </h1>
-            <a href="#contact"><button class="hero-button">Contact</button></a>
+            <div class="hero-buttons-container">
+                <a href="#contact"><button class="hero-button">Contact</button></a>
+                <a href="http://localhost:10023/wp-content/uploads/2024/04/Rhys-Miller-Resume.pdf"
+                    download="Rhys-Miller-Resume.pdf"><button class="hero-button">Resume</button></a>
+            </div>
         </section>
         <section id="about-me" class="about-me appear">
             <h2 class="about-heading">About Me</h2>
