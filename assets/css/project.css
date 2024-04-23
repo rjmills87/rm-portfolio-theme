@@ -147,4 +147,9 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .icons {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
