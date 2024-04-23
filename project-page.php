@@ -24,7 +24,7 @@ get_header(); ?>
                 <div class="icons appear">
                     <?php foreach ($icons as $icon) : ?>
                     <?php
-                            $icon_svg = get_template_directory_uri() . "/assets/images/" . $icon->name . '.svg';
+                            $icon_svg = get_template_directory_uri() . "/assets/images/" . $icon->slug . '.svg';
                             ?>
                     <div class="icon-container">
                         <img class="project-icon" src="<?php echo $icon_svg; ?>" alt="<?php echo $icon->name; ?>" />
