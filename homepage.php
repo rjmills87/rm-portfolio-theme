@@ -7,18 +7,27 @@ get_header(); ?>
 <div class="container">
     <main id="main" class="site-main" role="main">
         <section class="hero">
-            <h1 class="hero-heading">Hi, I'm <span class="red-text">Rhys</span>. <br>Web<span class="red-text">
-                    Developer</span>.</h1>
-            <button class="hero-button">Contact</button>
+            <h1 class="hero-heading">Hi, I'm Rhys.
+                <br>Web
+                Developer.
+            </h1>
+            <div class="hero-buttons-container">
+                <a href="#contact"><button class="hero-button">Contact</button></a>
+                <a href="http://localhost:10023/wp-content/uploads/2024/04/Rhys-Miller-Resume.pdf"
+                    download="Rhys-Miller-Resume.pdf"><button class="hero-button">Resume</button></a>
+            </div>
         </section>
-        <section class="about-me">
+        <section id="about-me" class="about-me appear">
             <h2 class="about-heading">About Me</h2>
-            <p class="about-para">I am a web developer with a passion for creating beautiful and functional websites. I
-                have experience
-                with HTML, CSS, JavaScript, and WordPress. I am always looking to learn new things and improve my
-                skills.</p>
+            <p class="about-para">Hi! I'm Rhys, a passionate Web Developer based in Ipswich, UK. I have a passion for
+                creating engaging and functional digital experiences. With an eye for detail and an ongoing commitment
+                to
+                learning and personal development and an in an interest in staying at the forefront of web
+                technologies, I love to bring
+                designs to life by
+                creating sleek, responsive websites that captivate users with a seamless experience.</p>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills appear">
             <h2 class="skills-heading">Skills</h2>
             <div class="skills-container">
                 <div class="skill">
@@ -48,13 +57,12 @@ get_header(); ?>
                 <div class="skill">
                     <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/react.svg"
                         alt="React JS Logo">
-                    <p class="skill-name">React JS</p>
+                    <p class="skill-name">React</p>
                 </div>
                 <div class="skill">
-                    <img class="skill-icon"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/tailwindcss.svg"
+                    <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/tailwind.svg"
                         alt="Tailwind CSS Logo">
-                    <p class="skill-name">Tailwind CSS</p>
+                    <p class="skill-name">Tailwind</p>
                 </div>
                 <div class="skill">
                     <img class="skill-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/git.svg"
@@ -68,25 +76,25 @@ get_header(); ?>
                 </div>
             </div>
 </div>
-<section class="projects">
-    <h2 class="projects-heading">Projects</h2>
-    <div class="project-container">
+<section id="projects" class="projects-section appear">
+    <h2 class="projects-section-heading">Projects</h2>
+    <div class="projects-section-container">
         <?php
                 $args = array(
                     'post_type' => 'project',
-                    'posts_per_page' => 3
+                    'posts_per_page' => 4
                 );
                 $projects = new WP_Query($args);
                 if ($projects->have_posts()) {
                     while ($projects->have_posts()) {
                         $projects->the_post();
                         ?>
-        <div class="project">
+        <div class="projects-section-project">
             <a href="<?php the_permalink(); ?>">
-                <h3 class="project-title"><?php the_title(); ?></h3>
-                <div class="project-thumbnail">
-                    <img class="project-thumbnail" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
-                        alt="<?php the_title(); ?>">
+                <h3 class="projects-section-project-title"><?php the_title(); ?></h3>
+                <div class="projects-section-project-thumbnail">
+                    <img class="projects-section-project-thumbnail"
+                        src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">
                 </div>
             </a>
         </div>
@@ -97,7 +105,7 @@ get_header(); ?>
                 ?>
     </div>
 </section>
-<section class="contact">
+<section id="contact" class="contact-section appear">
     <h2 class="contact-heading">Contact</h2>
     <p class="contact-para">I am available for freelance work. If you are interested in hiring me for your project,
         please contact me.</p>
@@ -106,4 +114,10 @@ get_header(); ?>
     </div>
     </main>
     </div>
-    <?php get_footer(); ?>
+    <div class="back-to-top">
+        <a href=" #header">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fast-arrow-up.svg" alt="Return to top">
+        </a>
+    </div>
+</section>
+<?php get_footer(); ?>

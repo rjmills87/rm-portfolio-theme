@@ -1,13 +1,21 @@
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: transparent;
+  color: var(--gray);
   padding: 20px;
   text-align: center;
+  border-top: solid var(--gray) 0.5px;
+  margin: 0rem 5rem;
 }
 
 .github-icon,
 .linkedin-icon {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.github-icon:hover,
+.linkedin-icon:hover {
+  transform: scale(1.1);
 }

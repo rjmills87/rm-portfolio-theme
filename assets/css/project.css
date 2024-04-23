@@ -1,30 +1,150 @@
 .project {
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
-.project-card {
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 2rem;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .project-image {
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 1000px;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.project-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: red;
-  margin-bottom: 2rem;
-  text-align: center;
+  padding: 2rem;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .project-description {
+  color: var(--white);
+  margin: 1rem 10rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 2rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-name {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #333;
-  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.project-icon {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.1);
+}
+
+.tech-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 2rem;
+}
+
+.link-btn {
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  background-color: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 200px;
+  transition: background-color 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.return-home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.back {
+  color: var(--gray);
+  text-decoration: underline;
+  text-decoration-color: var(--gray);
+  font-size: 1.25rem;
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-image {
+    height: auto;
+    width: 650px;
+  }
+
+  .project-description {
+    margin: 1rem 3rem;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 767px) {
+  .project-heading {
+    font-size: 2.5rem;
+  }
+
+  .project-image {
+    height: auto;
+    width: 350px;
+  }
+
+  .project-description {
+    margin: 1rem 1.5rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

@@ -4,16 +4,20 @@
 <head>
     <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Rhys Miller's Web Development Portfolio. A website to showcase my work and web development skills.">
+
     <?php wp_head();?>
     <!-- This is a hook that allows WordPress to add things like stylesheets, scripts, and meta tags to the head of the document. -->
+    <title>Rhys Miller Portfolio</title>
 </head>
 
 <body <?php body_class();?>>
-    <header>
+    <header id="header">
         <div class="site-header">
             <div id='site-logo'>
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/site-logo.png"
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/rm-logo-white.png"
                         alt="<?php bloginfo('name'); ?>">
                 </a>
             </div>

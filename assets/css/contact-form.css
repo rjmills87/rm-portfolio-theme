@@ -1,36 +1,59 @@
 .contact-form-container {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
-  padding: 2rem;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Contact Form 7 Styles */
+/* For tablets */
+@media only screen and (min-width: 768px) {
+  .contact-form-container {
+    width: 70%;
+    display: block;
+  }
+}
+
+/* For desktops */
+@media only screen and (min-width: 1024px) {
+  .contact-form-container {
+    width: 50%;
+    display: block;
+  }
+}
 
 .wpcf7-form-control {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray);
   border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  color: var(--white);
 }
 
 .wpcf7-submit {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
   display: inline-block;
   padding: 1rem 2.5rem;
   margin-top: 1rem;
   border-radius: 15px;
-  background-color: red;
-  color: #fff;
+  background-color: var(--white);
+  color: var(--black);
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  transition: background-color 0.5s ease;
   border: none;
   cursor: pointer;
   width: max-content;
 }
 
 .wpcf7-submit:hover {
-  background-color: #cc0000;
+  background-color: var(--gray);
+  color: var(--white);
 }

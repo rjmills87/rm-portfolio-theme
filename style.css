@@ -6,112 +6,77 @@ Description: Custom theme for my personal Web Development Portfolio
 Version: 1.0
 */
 
-/* Reset default browser styles */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* CSS Color Variables */
+:root {
+  --white: #ffffff;
+  --gray: #333333;
+  --black: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Global styles */
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-/* Posts */
-.post {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+a {
+  text-decoration: underline;
+  color: inherit;
 }
 
-.post h2 {
-  margin-bottom: 10px;
+p {
+  line-height: 1.5;
 }
 
-.post p {
-  margin-bottom: 10px;
+/* Fade in animations */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.appear.inview {
+  opacity: 1;
+  transform: none;
+}
+
+.appear.inview:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.appear.inview:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.appear.inview:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.appear.inview:nth-child(4) {
+  transition-delay: 0.4s;
 }

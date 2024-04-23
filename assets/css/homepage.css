@@ -4,42 +4,51 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   text-align: center;
-  /* background-color: #f4f4f4; */
+  background-image: url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-heading {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--white);
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hero-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .hero-button {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Playfair Display", serif;
   display: inline-block;
   padding: 1rem 2.5rem;
   margin-top: 1rem;
   border-radius: 15px;
-  background-color: red;
-  color: #fff;
+  background-color: var(--white);
+  color: var(--black);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   border: none;
   cursor: pointer;
 }
 
 .hero-button:hover {
-  background-color: #333;
-}
-
-.red-text {
-  color: red;
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 /* About Styles */
@@ -54,14 +63,14 @@
 .about-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--white);
   margin-bottom: 2rem;
 }
 
 .about-para {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #333;
+  color: var(--white);
   margin-bottom: 2rem;
   text-align: center;
   width: 75%;
@@ -80,7 +89,7 @@
 .skills-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--white);
   margin-bottom: 3rem;
 }
 
@@ -100,11 +109,7 @@
   margin-bottom: 1rem;
   width: 200px;
   text-align: center;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgb(244, 7, 7);
-  transition: transform 0.3s ease;
+  background: var(--black);
 }
 
 .skill-icon {
@@ -113,18 +118,14 @@
   margin-bottom: 1rem;
 }
 
-.skill:hover {
-  transform: scale(1.1);
-}
-
 .skill-name {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #333;
+  color: var(--white);
 }
 
 /* Projects Styles */
-.projects {
+.projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,34 +133,72 @@
   width: 100%;
 }
 
-.projects-heading {
+.projects-section-heading {
   font-size: 2.5rem;
   font-weight: 700;
-  color: red;
+  color: var(--white);
   margin-bottom: 2rem;
 }
 
-.project-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.projects-section-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 100px;
   text-align: center;
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.project-title {
+.projects-section-project-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
+  color: var(--white);
+  margin-bottom: 2rem;
 }
 
-.project-thumbnail {
-  height: 200px;
-  width: auto;
-  border-radius: 10px;
+.projects-section-project-thumbnail {
+  height: auto;
+  width: 500px;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.projects-section-project-thumbnail:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Contact Styles */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.contact-para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 75%;
+}
+
+.back-to-top {
+  margin-bottom: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.back-to-top:hover {
+  transform: scale(1.2);
 }
 
 /* Tablets (portrait and landscape) ----------- */
@@ -176,7 +215,7 @@
   /* About Styles */
 
   .about-heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .about-me {
@@ -184,7 +223,7 @@
   }
 
   .about-para {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /* Skills Styles */
@@ -194,7 +233,7 @@
   }
 
   .skills-heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .skill {
@@ -204,10 +243,30 @@
   .skill-name {
     font-size: 1rem;
   }
+
+  /* Projects Styles */
+
+  .projects-section {
+    margin-top: 3rem;
+  }
+
+  .projects-section-container {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+
+  .projects-section-heading {
+    font-size: 2.25rem;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 767px) {
+  /* Hero Styles */
+  .hero {
+    height: 70vh;
+  }
+
   .hero-heading {
     font-size: 2.5rem;
   }
@@ -216,6 +275,7 @@
     font-size: 1rem;
   }
 
+  /* About Styles */
   .about-heading {
     font-size: 1.5rem;
   }
@@ -224,11 +284,32 @@
     font-size: 1rem;
   }
 
+  /* Skills Styles */
+
   .skills-heading {
     font-size: 1.5rem;
   }
 
   .skill-name {
     font-size: 1rem;
+  }
+
+  /* Projects Styles */
+
+  .projects-section {
+    margin-top: 3rem;
+  }
+
+  .projects-section-container {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+
+  .projects-section-heading {
+    font-size: 2.25rem;
+  }
+
+  .projects-section-project-thumbnail {
+    width: 275px;
   }
 }
